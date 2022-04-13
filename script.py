@@ -40,7 +40,6 @@ for file_name in random.sample(files, len(files)):
 
     files_moved += 1
 
-
 print("Partitioning images by age of individual in the training set...")
 partition_files(os.listdir("data/training_set"), "data/training_set/", test_set=False)
 
