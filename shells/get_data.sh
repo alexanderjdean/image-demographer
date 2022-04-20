@@ -9,3 +9,9 @@ rm -r crop_part1
 
 echo "Renaming the data file..."
 mv UTKFace/ data/
+
+echo "Training and evaluating the model..."
+python src/main.py
+
+echo "Removing all training data..."
+rm -r data/
